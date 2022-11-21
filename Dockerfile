@@ -108,6 +108,9 @@ ADD utilities/docker-etc-profile.sh /etc/docker-etc-profile.sh
 RUN chmod 777 /etc/docker-etc-profile.sh
 RUN echo "source /etc/docker-etc-profile.sh" >> /root/.bashrc
 
+# Install FireFox.
+RUN utilities/install_firefox.sh
+
 # Install CLion.
 RUN utilities/install_clion.sh
 

@@ -35,7 +35,7 @@ fi
 ln -sf /usr/bin/java /opt/clion/jbr/bin/java
 
 # Create an alias for clion
-echo "alias clion='sh /opt/clion/bin/clion.sh'" >> ~/.bashrc
+echo "alias clion='sh /opt/clion/bin/clion.sh &'" >> ~/.bashrc
 
 # Create a desktop entry
 cat <<EOF > /usr/share/applications/clion.desktop
